@@ -38,11 +38,10 @@ We can upgrade this into something even stronger:
 
 ---
 
-But first…
-
-👉 Upload this one.
-
-Then come back and tell me:
-> “Repo is live”
-
-And we level it up 😏
+## Features
+- Easy, Medium, Hard difficulty levels
+- Random math questions (+, -, *)
+- Input validation
+- Score tracking
+- Performance feedback
+- Replay option
