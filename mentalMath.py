@@ -3,7 +3,34 @@ import random
 #Mental math program
 
 #Play again game loop starts here
-while True:    
+while True:
+    
+    difficulty = input("Choose difficulty (easy, medium, hard): ").lower()#lower() means Easy -> easy. so no uppercase errors 
+    
+    #This sets the game rules
+    if difficulty == "easy":
+        min1, max1 = 1, 20
+        min2, max2 = 1, 20
+        operators = ["+"]
+    
+    elif difficulty == "medium":
+        min1, max1 = 10, 99
+        min2, max2 = 1,99
+        operators = ["+", "-"]
+    
+    elif difficulty == "hard":
+        min1, max1 = 10, 200
+        min2, max2 = 1, 100
+        operators = ["+", "-", "*"]
+        
+    else:
+        print("Invalid input! Defaulting to medium: ")
+        min1,max1 = 10, 99
+        min2, max2 = 1, 99
+        operators = ["+", "-"]
+        
+    #Display difficulty they chose, UX upgrade
+    print(f"\nYou selected: {difficulty.capitalize()} mode\n")
     #Create a score variable first, outside loop
     score = 0
     
@@ -12,11 +39,12 @@ while True:
     for i in range(1, 6):
         
         #Generate two random numbers,  i.e 34, 6
-        num1 = random.randint(10, 99)
-        num2 = random.randint(1,99)
+        #Implement min, max as values
+        num1 = random.randint(min1, max1)
+        num2 = random.randint(min2, max2)
         
         #Randomise the operator/signs
-        operator = random.choice(["+", "-"])
+        operator = random.choice(operators)
         
         #The following is to swap -ves into correct order, place this conditional b4 asking user input
         #Subtraction will be positive
@@ -40,6 +68,9 @@ while True:
         if operator == "+":
             correct = num1 + num2
     
+        elif operator == "*":
+            correct = num1 * num2
+            
         else:
             correct = num1 - num2
         
@@ -88,3 +119,4 @@ while True:
         
 #Date: 16/03. I will be adding the play again feature
 #Date 17/03. Upload version 1.0 to Github
+#Date 18/03. Added difficulty levels
