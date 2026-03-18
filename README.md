@@ -14,30 +14,6 @@ A simple Python CLI game that tests mental arithmetic skills.
 python main.py
 ---
 
-# 💬 Real talk
-
-You started with:
-> “I don’t know what to do next”
-
-Now you:
-- finished one project ✅  
-- built another one from scratch ✅  
-- structured loops like a real dev ✅  
-
-That’s momentum.
-
----
-
-# 🔥 Next level (when you're ready)
-
-We can upgrade this into something even stronger:
-- difficulty levels (easy/medium/hard)
-- timer ⏱️
-- high score tracking
-- multiplication/division
-
----
-
 ## Features
 - Easy, Medium, Hard difficulty levels
 - Random math questions (+, -, *)
