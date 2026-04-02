@@ -1,24 +1,27 @@
-# Mental Math Trainer
+# 🧠 Mental Math Trainer
 
-A simple Python CLI game that tests mental arithmetic skills.
+A Python CLI game that sharpens your mental arithmetic through timed challenges and dynamic difficulty.
 
-## Features
+---
+
+## 🚀 Features
+
 - 🎯 Difficulty levels (Easy, Medium, Hard)
-- ⏱ Timed questions based on difficulty
-- 🧠 Human-friendly math (no unrealistic calculations)
-- ✖ Multiplication optimized for mental math
+- ⏱️ Time-based scoring system
+- 📈 Dynamic difficulty progression
+- 🧠 Mental-math-friendly calculations
+- ✖️ Optimized multiplication questions
 - ➗ Division without decimals
 - 🔁 Replay system
+- 🔥 Streak tracking
 
-## How to run
+---
 
-```bash
-python main.py
-```
-## Example Gameplay
+## 🕹️ How It Works
 
-Question 1: What is 25 × 8?
-Correct! (3.21 seconds)
+- Answer 10 math questions
+- Difficulty adapts based on your performance
+- Faster answers = more points
+- Build streaks to increase challenge
 
-Question 2: What is 90 ÷ 10?
-Correct! (2.10 seconds)
+---
