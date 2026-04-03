@@ -28,6 +28,7 @@ A Python CLI game that sharpens your mental arithmetic through timed challenges 
 
 ## 🧪 Example Gameplay
 [Difficulty: EASY]
+
 Question 1: 
 
 What is 25 × 8?
